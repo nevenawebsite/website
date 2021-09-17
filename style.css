@@ -1,0 +1,312 @@
+:root {
+    --main-color: #12141d;
+    --accent-color: #ff715b;
+    --subheading-color-free: #3ccf91;
+    --subheading-color-pro: #ff715b;
+    --subheading-color-all: #ff934f;
+    --subheading-background-color: hsla(0, 0%, 100%, 0.05);
+    --text-color-dark-gray: hsla(0, 0%, 100%, 0.5);
+    --text-color-light-gray: hsla(0, 0%, 100%, 0.75);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 90vw;
+    margin: 0 auto;
+    background-color: var(--main-color);
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+header > div img {
+    display: block;
+    width: 60px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li.checkmark:before {
+    content: '✓';
+}
+
+header > nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: var(--accent-color);
+    font-size: 16px;
+    padding: 15px 24px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+ul li p.line-through {
+    text-decoration: line-through;
+}
+
+main {
+    margin-top: 80px;
+    text-align: center;
+}
+
+main section h1 {
+    font-size: 40px;
+}
+
+main .landing {
+    height: 60vh;
+}
+
+main .landing p {
+    margin-top: 50px;
+    font-size: 20px;
+    color: var(--text-color-dark-gray);
+}
+
+main .landing .call-to-action {
+    margin-top: 50px;
+}
+
+main .landing a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: var(--accent-color);
+    font-size: 16px;
+    padding: 15px 24px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+main #memberships {
+    margin-top: 170px;
+}
+
+#memberships .cards {
+    display: flex;
+    flex-direction: column;
+}
+
+#memberships .cards .card {
+    margin-top: 50px;
+    width: 330px;
+    height: 500px;
+    border-radius: 6px;
+    background-color: var(--subheading-background-color);
+}
+
+#memberships .cards .card .membership-type {
+    font-size: 20px;
+    text-align: left;
+    padding: 25px 0 0 30px;
+    font-weight: 600;
+}
+
+#free {
+    color: var(--subheading-color-free);
+}
+
+#pro {
+    color: var(--subheading-color-pro);
+}
+
+#all-access {
+    color: var(--subheading-color-all);
+}
+
+#memberships .cards .card .price-desc {
+    text-align: left;
+    padding: 25px 0 0 30px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#memberships .cards .card ul {
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+#memberships .cards .card ul li {
+    margin-top: 20px;
+}
+
+#memberships .cards .card ul li.crossed:before {
+    content: 'x';
+}
+
+#memberships .cards .card ul li p {
+    display: inline;
+    padding-left: 20px;
+}
+
+#memberships .cards .card ul li p {
+    color: var(--text-color-dark-gray);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#memberships .cards .card .price-desc .price-currency {
+    font-size: 24px;
+    margin-right: -10px;
+}
+
+#memberships .cards .card .subscribe {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 20px 50px;
+    margin-top: 50px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1.1px;
+}
+
+footer {
+    margin-top: 140px;
+    padding-top: 20px;
+    background-color: var(--subheading-background-color);
+    height: 200px;
+    margin-bottom: 50px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+footer .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 45%;
+    height: 100px;
+}
+
+footer .footer-content a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+footer .footer-content .social a {
+    margin-left: 10px;
+}
+
+footer .copyright {
+    color: var(--text-color-dark-gray);
+    font-size: 14px;
+}
+
+.login-section {
+    color: #000000;
+    background-color: #ffffff;
+    min-height: 400px;
+    padding: 20px 10px;
+    border-radius: 6px;
+}
+
+.logo-box img {
+    background-color: #000000;
+    display: block;
+    width: 40px;
+    margin: 0 auto;
+}
+
+.login-section h2 {
+    margin-top: 40px;
+}
+
+.login-section form {
+    margin-top: 20px;
+}
+
+.login-section form .input-box {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-section form .input-box label {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+}
+
+.login-section form .input-box input {
+    margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+.login-section form > input {
+    margin-top: 40px;
+    width: 300px;
+    color: #ffffff;
+    background-color: var(--accent-color);
+    font-size: 16px;
+    padding: 15px 24px;
+    font-weight: 600;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+    main #memberships {
+        margin-top: 0;
+    }
+
+    #memberships .cards {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #memberships .cards .card {
+        width: 400px;
+    }
+
+    #memberships .cards {
+        margin: 50px auto;
+        width: 90vw;
+        flex-wrap: wrap;
+    }
+
+    footer .footer-content {
+        flex-direction: row;
+        width: 30%;
+    }
+
+    .login-section {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+}
